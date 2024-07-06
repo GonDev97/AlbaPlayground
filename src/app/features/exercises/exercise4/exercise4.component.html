@@ -1,0 +1,25 @@
+<app-card title="Benvinguda">
+    <div class="welcome-container">
+        <p>{{message()}}</p>
+    </div>
+    <div class="form-container">
+        <mat-form-field appearance="outline">
+            <input
+              type="text"
+              matInput
+              #trigger="matAutocompleteTrigger"
+              [formControl]="autocompleteControl"
+              [matAutocomplete]="auto" />
+              <mat-autocomplete
+              #auto="matAutocomplete"
+              (optionSelected)="optionSelected($event.option.value)">
+              @for (country of countriesToShow(); track $index) {
+                <mat-option [value]="country.name.common">{{
+                    country.name.common
+                }}</mat-option>
+              }
+            </mat-autocomplete>
+        </mat-form-field>
+    </div>
+    Country seleccionat: {{countrySeleccionat()}}
+</app-card>

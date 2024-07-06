@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  height: var(--navbar-height);
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+mat-toolbar {
+  background-color: white;
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    cursor: pointer;
+  }
+}
+
+
+.navbar-mat-menu {
+  .mat-mdc-menu-content:hover {
+    background-color: var(--main-color);
+  }
+}

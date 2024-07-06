@@ -1,0 +1,17 @@
+.mat-drawer-container {
+  height: calc(100vh - var(--navbar-height));
+  height: calc(100dvh - var(--navbar-height));
+}
+
+.side-menu-container {
+  background-color: black;
+}
+
+.mat-drawer-content {
+  padding: 15px 25px;
+}
+
+mat-drawer {
+  border-radius: 0 !important;
+  width: 200px !important;
+}

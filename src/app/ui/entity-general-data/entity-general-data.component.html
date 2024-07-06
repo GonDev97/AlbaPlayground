@@ -1,0 +1,18 @@
+<section class="entity-info-container">
+  @if (loading()) {
+    <mat-spinner style="margin: 0 auto"> </mat-spinner>
+  } @else {
+    <span class="info-title"
+      >{{ gridTitle() | transloco | uppercase }}
+      {{ gridSubtitle() ? '- ' + (gridSubtitle() | transloco) : '' }}</span
+    >
+    <span class="divider"></span>
+    <div
+      [ngClass]="showGrid() ? 'info-grid' : classname()"
+      [style.grid-template-columns]="'repeat(' + gridColumns() + ', 1fr)'"
+      [style.gap]="rowGap()"
+      [style.max-width]="infoGridMaxWidth()">
+      <ng-content></ng-content>
+    </div>
+  }
+</section>

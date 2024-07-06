@@ -1,0 +1,37 @@
+ul.side-menu-list {
+  background-color: black;
+  height: calc(100dvh - var(--navbar-height));
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.side-nav-option {
+  span {
+    color: white;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 16px;
+    font-size: var(--14px);
+    text-decoration: none;
+    &.active {
+      background-color: #F29EE7;
+      font-weight: bold;
+      span {
+        color: #5b005b;
+      }	
+    }
+  }
+
+  mat-icon {
+    width: 19px;
+    height: 19px;
+  }
+}

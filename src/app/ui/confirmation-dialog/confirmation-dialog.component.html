@@ -1,0 +1,18 @@
+<mat-dialog-content>
+  <div class="title">
+    <mat-label>
+      Puntualitat 
+    </mat-label>
+  </div>
+  <div class="message">
+    <mat-label>Si la gent de Nexus queda a les 10 al Boston per esmorzar, a quina hora s'ha d'arribar?</mat-label>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-stroked-button (click)="dialogRef.close(false)">
+     10:05, justíssima, imperdonable, cárcel!
+  </button>
+  <button mat-flat-button color="primary" (click)="dialogRef.close(true)">
+    10:00 o abans!
+  </button>
+</mat-dialog-actions>

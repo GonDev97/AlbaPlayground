@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+//*****************RESET*****************//
+html,
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100dvh;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+* {
+  min-width: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+//*****************END RESET*****************//
+
+:root {
+    --main-color: #be1622;
+    --main-color-hover: #9a1a23;
+    --secondary-color: #ffffff;
+    --success-color: #5d7a14;
+    --success-color-disabled: #ADBC89;
+    --info-color: #2e9fdb;
+    --danger-color: #db3327;
+    --navbar-height: 70px;
+    --24px: 1.5rem;
+    --20px: 1.25rem;
+    --18px: 1.125rem;
+    --16px: 1rem;
+    --14px: 0.875rem;
+    --13px: 0.8125rem;
+    --mat-option-label-text-size: var(--14px);
+    --mat-sidenav-container-divider-color: rgba(0, 0, 0, .12);
+    --mat-sidenav-container-background-color: white;
+    --mat-sidenav-container-text-color: rgba(0, 0, 0, .87);
+    --mat-sidenav-content-background-color: #fafafa;
+    --mat-sidenav-content-text-color: rgba(0, 0, 0, .87);
+    --mat-sidenav-scrim-color: rgba(0, 0, 0, .6);
+  }
+  
+
+mat-drawer.mat-drawer-side {
+    border-right: none;
+    border: none;
+  }
+  
+  .navbar-mat-menu {
+    div.mat-mdc-menu-panel:hover {
+      background-color: var(--main-color);
+    }
+    button.mat-mdc-menu-item:not([disabled]):hover {
+      background-color: transparent;
+    }
+  }
+  

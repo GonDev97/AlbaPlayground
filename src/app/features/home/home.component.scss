@@ -1,0 +1,21 @@
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+app-card {
+    width: 800px;
+    display: block;
+    .welcome-container {
+        display: flex;
+        * {
+            flex: 1;
+        }
+        img {
+            width: 250px;
+            height: 350px;
+        }
+    }
+}

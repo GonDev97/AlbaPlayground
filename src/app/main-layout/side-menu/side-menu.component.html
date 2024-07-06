@@ -1,0 +1,12 @@
+<ul class="side-menu-list">
+  @for (option of menuOptions; track option.id) {
+    <li [routerLink]="[option.id]" class="side-nav-option">
+      <a
+        [routerLink]="[option.id]"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }">
+        <span>{{option.title }}</span>
+      </a>
+    </li>
+  }
+</ul>

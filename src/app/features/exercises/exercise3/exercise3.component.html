@@ -1,0 +1,22 @@
+<app-card title="Benvinguda">
+    <div class="welcome-container">
+        <p>{{message()}}</p>
+    </div>
+    <div class="form-container">
+        <mat-form-field appearance="outline">
+            <mat-select [formControl]="namesFormControl">
+                @for (name of names; track name) {
+                    <mat-option [value]="name">{{ name }}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select [formControl]="surnamesFormControl">
+                @for (surname of surnames; track surname) {
+                    <mat-option [value]="surname">{{ surname }}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+    </div>
+    Nom final: {{nomFinal()}}
+</app-card>

@@ -1,0 +1,13 @@
+mat-card {
+    background-color: white;
+    gap:16px;
+}
+
+mat-card-title {
+    font-weight: bold;
+    font-size: var(--24px);
+}
+
+.mat-card-content {
+    padding: 16px;
+}
