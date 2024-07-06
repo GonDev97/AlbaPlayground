@@ -1,9 +1,9 @@
-import { AfterViewInit, Component, effect, ElementRef, inject, OnInit, Signal, signal, viewChild } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { EXERCICI_1 } from '@core/constants/messages';
 import { CountriesService } from '@core/services/countries.service';
 import { CardComponent } from '@ui/card/card.component';
-import { concatMap, Subject, switchMap } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-exercise1',

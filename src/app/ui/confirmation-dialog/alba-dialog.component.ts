@@ -8,20 +8,16 @@ import {
 import { MatLabel } from '@angular/material/form-field';
 
 @Component({
-  selector: 'app-confirmation-dialog',
+  selector: 'app-alba-dialog',
   standalone: true,
   imports: [MatDialogModule, MatLabel, MatButtonModule],
-  templateUrl: './confirmation-dialog.component.html',
-  styleUrl: './confirmation-dialog.component.scss',
+  templateUrl: './alba-dialog.component.html',
+  styleUrl: './alba-dialog.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ConfirmationDialogComponent {
+export class AlbaDialogComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA)
-    public data: {
-      title: string;
-      message: string;
-    },
-    public dialogRef: MatDialogRef<ConfirmationDialogComponent>
+    public dialogRef: MatDialogRef<AlbaDialogComponent>
   ) {}
 }

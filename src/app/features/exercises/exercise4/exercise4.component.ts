@@ -4,11 +4,10 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatOptionModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { EXERCICI_3, EXERCICI_4 } from '@core/constants/messages';
+import { EXERCICI_4 } from '@core/constants/messages';
 import { Country } from '@core/interfaces/country';
 import { CountriesService } from '@core/services/countries.service';
 import { CardComponent } from '@ui/card/card.component';
-import { debounceTime, distinctUntilChanged, filter, switchMap, tap } from 'rxjs';
 
 @Component({
   selector: 'app-exercise4',

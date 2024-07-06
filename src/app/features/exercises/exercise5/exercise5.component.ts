@@ -4,8 +4,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { EXERCICI_5 } from '@core/constants/messages';
 import { CountriesService } from '@core/services/countries.service';
 import { CardComponent } from '@ui/card/card.component';
-import { ConfirmationDialogComponent } from '@ui/confirmation-dialog/confirmation-dialog.component';
-import { filter, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-exercise5',
@@ -21,6 +19,6 @@ export class Exercise5Component {
   public countriesService = inject(CountriesService);
 
   public openDialog() {
-    
+    console.log('FALTA FER');
   }
 }
