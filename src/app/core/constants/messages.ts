@@ -1,4 +1,4 @@
-export const WELCOME_MESSAGE = "Per l'activitat d'avui, repassarem els conceptes bàsics de rxjs, per fer-ho, farem una sèrie de petits exercicis on utilitzarem la teva API preferida (o almenys, la d'en Joel). A cada apartat trobaràs la informació necessària i els passos a seguir, també pots buscar la informació que necessitis, com si estiguèssis a un projecte real, molta sort!"
+export const WELCOME_MESSAGE = "Per l'activitat d'avui, repassarem els conceptes bàsics de rxjs, per fer-ho, farem una sèrie de petits exercicis on utilitzarem la teva API preferida (o almenys, la d'en Joel). A cada apartat trobaràs la informació necessària i els passos a seguir, també pots buscar la informació que necessitis, com si estiguèssis a un projecte real!"
 
 export const EXERCICI_1 = "Per començar amb una cosa sencilla, cada cop que el botó es mostra per pantalla, es fa una petició de getCountries, hauriem de bloquejar mitjançant rxjs que fins que no hagi acabat aquesta crida, no es pugui tornar a fer una altra petició. Només has de tocar la funció listenClicks (molt mal feta) "
 

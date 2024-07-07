@@ -7,15 +7,34 @@
 
 app-card {
     width: 800px;
-    display: block;
     .welcome-container {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .presentation-container {
         display: flex;
         * {
             flex: 1;
         }
         img {
             width: 250px;
-            height: 350px;
+            height: 300px;
+        }
+        p strong {
+            font-weight: bold;
+            text-wrap: nowrap;
+            margin-top: 35px;
+            display: block;
+        }
+    }
+    .frameworks-container {
+        display: flex;
+        gap: 10px;
+        align-items: stretch;
+        justify-content: space-evenly;
+        img.framework-image {
+            cursor: pointer;
         }
     }
 }

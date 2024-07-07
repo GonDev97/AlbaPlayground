@@ -1,7 +1,15 @@
 <app-card title="Benvinguda">
     <div class="welcome-container">
-        <p>{{message()}}</p>
-        <img src="Professor_Oak.webp" alt="teacer">
+        <div class="presentation-container">
+            
+            <p>{{message()}} <strong>Pero abans de res, hi ha una elecció molt important que has de fer:</strong></p>
+            <img src="Professor_Oak.webp" alt="teacher">
+        </div>
+        <div class=frameworks-container>
+            <img class="framework-image" (click)="reactClick()" src="react.jpg" alt="react">
+            <img class="framework-image" (click)="vueClick()"  src="vue.jpg" alt="vue">
+            <img class="framework-image" (click)="angularClick()" src="angular.jpg" alt="angular">
+    
+        </div>
     </div>
-    <a mat-flat-button routerLink="/exercise1">I'm ready! Anar a l'exercici 1</a>
 </app-card>

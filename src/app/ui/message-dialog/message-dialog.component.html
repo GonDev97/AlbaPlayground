@@ -1,0 +1,16 @@
+<mat-dialog-content>
+    <div class="title">
+      <mat-label>
+        {{data.title }}
+      </mat-label>
+    </div>
+    <div class="message">
+      <mat-label>{{data.message}}</mat-label>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-flat-button color="primary" (click)="dialogRef.close(true)">
+      Vull triar una altra opció
+    </button>
+  </mat-dialog-actions>
+  
